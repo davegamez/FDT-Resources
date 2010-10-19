@@ -23,13 +23,6 @@
 			<arg line="-O -L ${swiftsuspenders.swc}"/>
 		</exec>
 	</target>
-	
-	<target name="[SWC] fl package">
-		<mkdir dir="${lib.path}flash"/>
-		<exec executable="curl" dir="${lib.path}flash">
-			<arg line="-O -L ${fl.swc}"/>
-		</exec>
-	</target>
 
 	<target name="[SWC] MinimalComps">
 		<mkdir dir="${lib.path}minimalcomps"/>
@@ -80,18 +73,6 @@
 		<delete file="${lib.path}push_button_profiler/PBLabsProfiler.zip"/>
 	</target>
 
-	<target name="[ZIP] Tweenlite">
-		<mkdir dir="${lib.path}tweenlite"/>
-		<exec executable="curl" dir="${lib.path}tweenlite">
-			<arg line="-O -L ${tween.lite}"/>
-		</exec>
-		<unzip dest="${lib.path}tweenlite" src="${lib.path}tweenlite/greensock-as3.zip"></unzip>
-		<delete  file="${lib.path}tweenlite/greensock-as3.zip"/>
-		<move todir="${lib.path}tweenlite">
-			<fileset dir="${lib.path}tweenlite/greensock-as3"/>
-		</move>
-	</target>
-	
 	<!-- http://code.google.com/p/fuelanttasks/wiki/flaTask -->
 	<target name="[ZIP] Fuel Tasks">
 		<mkdir dir="${lib.path}fuel"/>

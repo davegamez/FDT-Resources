@@ -31,3 +31,5 @@ Here, we'll be putting fully functional projects that demonstrate various FDT co
 h4. Credits
 
 *SignalsTemplates.xml - By Aiden Taylor http://blog.aidentailor.net/2010/03/23/fdt-as3-signals-templates/
+*Minimal Comps - http://www.minimalcomps.com/
+*Signals - http://github.com/robertpenner/as3-signals
