@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:projectTemplate xmlns:tns="http://fdt.powerflasher.com/ProjectTemplate"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://fdt.powerflasher.com/ProjectTemplate ../../projectTemplate.xsd">
+	<name>AsDoc Build</name>
+	<description>
+---------------------------------------------
+AsDoc Build Project template 
+---------------------------------------------
+ASDoc化したいクラス群を、srcフォルダに入れて、ANTでお手軽ASDoc作成。
+
+Template created  by "itoz" ( http://www.romatica.com/ )
+2010.10.3
+
+</description>
+	<projectType>AS 3</projectType>
+	<folders>
+		<sourceFolder>src</sourceFolder>
+				<outputFolder>bin</outputFolder>
+	</folders>
+	<libraries>
+		<swc>
+			<path></path>
+			<asDoc></asDoc>
+			<source></source>
+		</swc>
+	</libraries>
+</tns:projectTemplate>
