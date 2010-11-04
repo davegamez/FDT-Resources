@@ -34,3 +34,4 @@ h4. Credits
 *Minimal Comps - http://www.minimalcomps.com/
 *Signals - http://github.com/robertpenner/as3-signals
 *AsDocBuild Template by Romantica http://blog.romatica.com/2010/10/04/fdt4_asdoc_build_project_template/
+*robotlegs-FDT-templates.xml - By Matan Uberstein http://www.matanuberstein.co.za/2010/11/robotlegs-fdt-templates/
