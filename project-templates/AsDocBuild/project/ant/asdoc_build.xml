@@ -1,36 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="ASDoc Build " default="asdoc">
+<project name="ASDoc Build ${MainTitle}" default="asdoc">
 	
-	<!-- FLEXSDKのパス 設定 ===================================================-->
-	
-	<property name="flex3dir" value="/Applications/FDTEnterprise/plugins/com.powerflasher.fdt.shippedFlexSDK_3.5.0.12683a_1000/flex" />
-	
-	<!--<property name="flex4dir" value="/Applications/Adobe Flash Builder 4/sdks/4.0.0/" />-->
-	
-	<!-- ====================================================================-->
-	
-	<property name="flex3bindir" 	value="${flex3dir}/bin" />
-	<property name="flex3libsdir"	value="${flex3dir}/frameworks/libs" />
-	<property name="mxmlc"			value="${flex3bindir}/mxmlc" />
-	<property name="asdoc" 			value="${flex3bindir}/asdoc" />
-	
-	<property name="docsdir" 		value="${basedir}/../asdoc" />
-	<property name="classesdir"		value="${basedir}/../src" />
-	<property name="libsdir" 		value="${basedir}/../libs" />
-
-	<!--  ASDOCタグ一覧		http://livedocs.adobe.com/flex/3_jp/html/help.html?content=asdoc_6.html#251570　-->
-	<!--  ASDoc オプション		http://www.adobe.com/livedocs/flex/3_jp/html/help.html?content=asdoc_9.html-->
+	<!--  ASDOC TagList   http://livedocs.adobe.com/flex/3_jp/html/help.html?content=asdoc_6.html-->
+	<!--  ASDoc Option    http://www.adobe.com/livedocs/flex/3_jp/html/help.html?content=asdoc_9.html-->
 	
 	<target name="asdoc">
+		<fdt.loadProjectProperties/>
+		<echo message="${FDTProjectPath}" />
+		<echo message="${FDTProjectSdkPath}" />
+		
 		<delete includeemptydirs="true">
-			<fileset dir="${docsdir}" includes="**/*" />
+			<fileset dir="${FDTProjectPath}/asdoc" includes="**/*" />
 		</delete>
-		<exec executable="${asdoc}">
-			<arg line="-doc-sources ${classesdir}" />					<!-- ソースファイルのパス -->
-			<arg line="-output ${docsdir}" />							<!-- 出力先 -->
-			<arg line="-window-title 'HTML Documentation'" />			<!-- HTMLウィンドウタイトル -->
-			<arg line="-main-title 'Romatica API Documentation '" />	<!-- タイトル -->
-			<!-- <arg line="-library-path '${libsdir}'" /> 					SWC ファイルを必要とする場合-->
+		<exec executable="${FDTProjectSdkPath}/bin/asdoc">
+			<arg line="-doc-sources ${FDTProjectPath}/src" />	<!-- src folder -->
+			<arg line="-output ${FDTProjectPath}/asdoc" />		<!-- output folder -->
+			<arg line="-window-title '${HtmlTitle}'" />			<!-- HTML title -->
+			<arg line="-main-title '${MainTitle}'" />			<!-- title -->
+			<arg line="-footer '${Footer}'" />					<!-- copyright -->	
+			<!-- <arg line="-library-path '${FDTProjectPath}/libs'" /> 	swc-->
 		</exec>
 	</target>
 	
