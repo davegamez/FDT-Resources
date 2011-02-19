@@ -4,7 +4,7 @@
 <stringAttribute key="APP_ARGUMENTS" value=""/>
 <stringAttribute key="ARGUMENTS" value="-static-link-runtime-shared-libraries=true&#10;-target-player={playerVersion}&#10;-library-path+=&quot;{flexSDK}/frameworks/locale/en_US&quot;&#10;-default-size=${swf_width},${swf_height}&#10;-define=CONFIG::Debug,true&#10;-define+=CONFIG::Release,false"/>
 <booleanAttribute key="KILL_PREVIUOS_VIEWER" value="true"/>
-<stringAttribute key="LAUNCHER_DEPENDENCIES" value="${projectName}_${IndexClass}&#10;[Self]"/>
+
 <stringAttribute key="MAIN_CLASS" value="src/${PreloaderClass}.as"/>
 <stringAttribute key="OUTPUT" value="${outputFolder}/${swfDir}preloader.swf"/>
 <booleanAttribute key="PASS_CP" value="true"/>

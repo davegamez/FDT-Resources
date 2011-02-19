@@ -143,13 +143,14 @@
 		<autoLibFolder>libs</autoLibFolder>
 	</folders>
 	
-	<contentCreation processFileExtensions="as,xml,launch,html" >
+	<contentCreation processFileExtensions="as,xml,launch,html,swf" >
 		<!-- Always -->
 		<file src="as/Preloader.as" dest="src/${PreloaderClass}.as"  />
 		<file src="as/Index.as" dest="src/${IndexClass}.as" process="true" />
 		<file src="as/IndexScene.as" dest="src/IndexScene.as" process="true" />
 		<file src="libs/Progression4.swc" dest="libs/Progression4.swc" process="true" />
 		<folder src="html-templates" dest="${outputFolder}" process="true" />
+		<file src="index.swf" dest="${outputFolder}/${swfDir}/index.swf" process="true" />
 		<folder src="launch" dest=".settings/launch" process="true" />
 		<folder dest="bin_release" process="true" />
 		<folder src="ant" dest="ant" process="true" />
