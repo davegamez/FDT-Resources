@@ -16,7 +16,7 @@
 					<variable name="playerVersion" label="Embed Player Version&#x0d;&#x0a;※ あくまで Embed のバージョンです"
 							default="9" type="enum('9','10','10.1','10.2')" />
 					<variable name="bg_color" label="BackGround Color"
-							default="#869ca7" type="string" />
+							default="#869ca7" type="color" />
 				</group>
 				<group label="キーワード、ディスクリプションの設定 :">
 					<variable name="Keywords" label="Keywords" default=""
