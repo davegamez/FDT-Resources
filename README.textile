@@ -33,5 +33,5 @@ h4. Credits
 *SignalsTemplates.xml - By Aiden Taylor http://blog.aidentailor.net/2010/03/23/fdt-as3-signals-templates/
 *Minimal Comps - http://www.minimalcomps.com/
 *Signals - http://github.com/robertpenner/as3-signals
-*AsDocBuild Template by Romantica http://blog.romatica.com/2010/10/04/fdt4_asdoc_build_project_template/
+*AsDocBuild Template by Romatica http://blog.romatica.com/2010/10/04/fdt4_asdoc_build_project_template/
 *robotlegs-FDT-templates.xml - By Matan Uberstein http://www.matanuberstein.co.za/2010/11/robotlegs-fdt-templates/ *fdt_prog4022_temp.zip From http://www.fdt.jp/?p=310
